@@ -41,6 +41,11 @@
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* HEADER */
 
 header {
@@ -59,11 +64,9 @@ header nav {
 nav * {
     flex-basis: 33%;
 }
-
 header aside {
     text-align: right;
 }
-
 #boolando-logo {
     padding: 5px 0;
     height:50px;
@@ -71,9 +74,7 @@ header aside {
 .logo {
     text-align: center;
 }
-
-a {
-    text-decoration: none;
+header a {
     color: #fff;
     padding: 0 5px;
 }
@@ -86,6 +87,16 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     flex-shrink: 0;
+}
+main img {
+    width: 100%;
+}
+.last-price {
+    color: red;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
 }
 /* FOOTER */
 
