@@ -23,3 +23,59 @@
 }
 
 /* ------------ UTILITIES ------------ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px dotted black;
+}
+.card {
+    flex-basis: calc(100% / 3);
+    min-height: 600px;
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 5px;
+}
+.flex {
+    display: flex;
+}
+.txt-white {
+    color: #fff;
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    background-color: orangered;
+}
+
+/* MAIN */
+main{
+    padding: 10px 0;
+}
+#main-section {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+
+footer {
+    height: 150px;
+    background-color: blue;
+}
+footer>div {
+    justify-content: space-between;
+    align-items: center;
+}
+.company-info, .social-info {
+    flex-basis: 10%;
+    height: 110px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#footer-box {
+    padding: 15px 0;;
+}
