@@ -12,6 +12,7 @@
     --font-sz-med: 1.2rem;
     --font-sz-ml: 1.5rem;
     --font-sz-lg: 2rem;
+    --padding-basic: 10px;
 }
 
 /* ------------ CSS RESET ------------*/
@@ -32,7 +33,8 @@
     min-height: 600px;
     border: 1px solid black;
     background-color: #fff;
-    padding: 5px;
+    padding: var(--padding-basic);
+    position: relative;
 }
 .flex {
     display: flex;
@@ -46,20 +48,46 @@ a {
     color: black;
 }
 
+.tag {
+    left: var(--padding-basic);
+    color: #fff;
+    text-align:center;
+    vertical-align:middle;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+.labels {
+    position: absolute;
+    left: var(--padding-basic);
+    bottom: 130px;
+}
+.go-fav {
+    position: absolute;
+    top: 20px;
+    right: var(--padding-basic);
+    padding: 4px 10px;
+    background-color: #fff;
+    font-size: var(--font-sz-lg);
+    vertical-align: middle;
+}
+
 /* HEADER */
 
 header {
     position: fixed;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 0;
     height: 75px;
-    background-color: rgb(255, 115, 0);
+    background-color:#fe6901;
 }
 header nav {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 0 var(--padding-basic);
 }
 nav * {
     flex-basis: 33%;
@@ -98,6 +126,32 @@ main img {
 .old-price {
     text-decoration: line-through;
 }
+.discount {
+    background-color: red;
+}
+.eco-friendly {
+    left: calc(var);
+    background-color:#008101;
+}
+.card:hover#relaxed-tee::after {
+    background-image: url(../img/1b.webp);
+    content:'';
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.go-fav:hover::after {
+    content:'/f004';
+    display: inline-block;
+    
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    
+    font: var(--fa-font-solid);
+    color: red;
+}
+
 /* FOOTER */
 
 footer {
@@ -113,7 +167,7 @@ footer>div {
     height: 110px;
     border: 1px solid rgb(0, 0, 0);
 }
-
 #footer-box {
     padding: 15px 0;;
 }
+
